@@ -1,13 +1,9 @@
 import "./input.styles.scss";
-
-// const Input = () => {
-//   return <input type="text" placeholder="Add item" />;
-// };
 import { useState } from "react";
 
 function Input() {
   const [inputValue, setInputValue] = useState("");
-  const [textList, setTextList] = useState([""]);
+  const [textList, setTextList] = useState([]);
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -26,13 +22,22 @@ function Input() {
 
   return (
     <div>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
-      <button onClick={handleButtonClick}>+</button>
+      <input
+        type="text"
+        placeholder="Type new activity here"
+        value={inputValue}
+        onChange={handleInputChange}
+      />
+      <button className="plus" onClick={handleButtonClick}>
+        +
+      </button>
       <div>
         {textList.map((text, index) => (
-          <div key={index}>
+          <div className="toDoItem" key={index}>
             <p>{text}</p>
-            <button onClick={() => handleItemDelete(index)}>-</button>
+            <button className="minus" onClick={() => handleItemDelete(index)}>
+              -
+            </button>
           </div>
         ))}
       </div>

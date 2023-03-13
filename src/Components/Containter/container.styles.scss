@@ -1,6 +1,6 @@
 .Title {
   color: rgb(222, 227, 248);
-  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 6px 3px 3px rgba(0, 0, 0, 0.5);
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -14,9 +14,9 @@
   flex-direction: column;
   margin: 0 auto;
   border: 2px solid #ccc;
-  border-radius: 1px;
+  border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  min-height: 500px;
+  min-height: 550px;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -24,5 +24,5 @@
     rgba(118, 146, 147, 1) 50%,
     rgba(0, 212, 255, 1) 100%
   );
-  width: 400px;
+  width: 550px;
 }

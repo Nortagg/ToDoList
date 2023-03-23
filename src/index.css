@@ -1,10 +1,15 @@
 body {
-  margin: 0;
+  margin-top: 130px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("https://wallpapershome.com/images/pages/pic_h/15266.jpg");
+  background-size: cover;
 }
 
 code {

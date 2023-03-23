@@ -1,26 +1,128 @@
-.minus {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background-color: #000000;
-  color: #ff0000;
-  text-align: center;
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 35%;
-  margin-right: 5px;
-}
-
 .toDoItem {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.check {
-  background-color: none;
-  text-align: center;
-  font-size: 10px;
-  font-weight: bold;
 
-  margin-right: 5px;
+.check-✓ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  margin-top: 9px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 20px;
+  border: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.check-✓:hover {
+  color: rgb(255, 255, 255);
+}
+
+.checkGreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: greenyellow;
+  background-color: gray;
+  margin-top: 9px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 20px;
+  border: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.delete-X {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9px;
+  background-color: gray;
+  color: rgb(2, 2, 2);
+  text-align: center;
+  font-size: 20px;
+  border: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.delete-X:hover {
+  color: rgba(172, 11, 11, 0.788);
+}
+.itemBorder {
+  margin: 0px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 4px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: rgba(252, 229, 202, 0.651);
+  font-weight: lighter;
+  display: inline-block;
+  width: 1em;
+  margin-left: -2em;
+}
+
+.toDoText {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.toDoTextLine {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: line-through red;
+  color: rgb(255, 255, 255);
+}
+.edit-Pencil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+  margin-top: 9px;
+  background-color: gray;
+  font-size: 20px;
+  border: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.edit-Pencil:hover {
+  color: rgb(238, 255, 0);
+}
+.Edit-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border: 1px;
+  border-radius: 7px;
+  height: 19px;
+  width: 180px;
+}
+
+.Edit-Save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 9px;
+  background-color: gray;
+  font-size: 20px;
+  border: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.Edit-Save:hover {
+  color: rgba(136, 255, 0, 0.692);
 }

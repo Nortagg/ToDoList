@@ -1,16 +1,14 @@
 import "./input.styles.scss";
-
-const Input = (props) => {
+const InputBar = (props) => {
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Type new activity here"
-        value={props.value}
-        onChange={props.onChange}
-      />
-    </div>
+    <input
+      className="input-look"
+      type="text"
+      placeholder="Type here"
+      value={props.value}
+      onChange={props.onChange}
+    />
   );
 };
 
-export default Input;
+export default InputBar;
